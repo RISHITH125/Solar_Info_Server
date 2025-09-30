@@ -7,7 +7,7 @@ import process from 'process';
 const router = Router();
 
 // Load environment variables from .env.local in current working directory
-const envPath = process.cwd() + '../../.env.local';
+const envPath = process.cwd() + '/.env.local';
 console.log('Trying to access env file:', envPath);
 dotenv.config({ path: envPath });
 
